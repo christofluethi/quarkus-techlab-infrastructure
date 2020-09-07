@@ -21,7 +21,7 @@ items:
     type: image
     params:
     - name: url
-      value: image-registry.openshift-image-registry.svc:5000/quarkus-techlab/data-producer:latest
+      value: image-registry.openshift-image-registry.svc:5000/quarkus-techlab-cluethi/data-producer:latest
 - apiVersion: tekton.dev/v1alpha1
   kind: PipelineResource
   metadata:
@@ -30,7 +30,7 @@ items:
     type: git
     params:
     - name: url
-      value: https://github.com/g1raffi/quarkus-techlab-data-consumer.git
+      value: https://github.com/christofluethi/quarkus-techlab-data-consumer.git
 - apiVersion: tekton.dev/v1alpha1
   kind: PipelineResource
   metadata:
@@ -39,4 +39,4 @@ items:
     type: image
     params:
     - name: url
-      value: image-registry.openshift-image-registry.svc:5000/quarkus-techlab/data-consumer:latest
+      value: image-registry.openshift-image-registry.svc:5000/quarkus-techlab-cluethi/data-consumer:latest
